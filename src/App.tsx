@@ -42,6 +42,8 @@ import { ForgotPassword } from "./pages/forgotPassword";
 import { Login } from "./pages/login";
 import { Register } from "./pages/register";
 import { Landing } from "./pages/landing";
+// import "./styles/App.css";
+import "tailwindcss/tailwind.css";
 
 function App() {
   const [colorScheme, setColorScheme] = useLocalStorage<ColorScheme>({

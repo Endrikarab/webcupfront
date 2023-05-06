@@ -1,10 +1,12 @@
+import { Grid, Image } from "@mantine/core";
+
 function TextBlock() {
   return (
     <div className="container">
       <div id="textblock">
         <div id="textblock-container">
           <h1 id="textblock-title">C'est quoi Onyrix AI?</h1>
-          <p id="textblock-content">
+          {/* <p id="textblock-content">
             The year is 1989.
             <br />
             <br />
@@ -23,7 +25,33 @@ function TextBlock() {
             into the world below, you'll explore a wild and unknown environment,
             facing questions and making interpersonal choices that can build or
             destroy the only meaningful relationship you have.
-          </p>
+          </p> */}
+
+          {/* grid grid-cols-1 md:grid-cols-3 */}
+
+          {/* <div className="bg-white">
+            <div
+              className="flex"
+              style={{ backgroundColor: "yellow", width: "200px" }}
+            >
+              1
+            </div>
+            <div className="grid-cols-4" style={{ backgroundColor: "red" }}>
+              9
+            </div>
+          </div> */}
+          <Grid grow style={{ textAlign: "center" }}>
+            <Grid.Col span={4}>
+              <Image
+                maw={240}
+                mx="auto"
+                radius="md"
+                src="./avatar.png"
+                alt="Random image"
+              />
+            </Grid.Col>
+            <Grid.Col span={4}>2</Grid.Col>
+          </Grid>
         </div>
         <footer id="textblock-footer">
           Demo Created With 🧡 By&nbsp;
