@@ -134,7 +134,11 @@ function App() {
                     /> */}
 
                     <Route path="/app">
-                      <Route index element={<p>app</p>} />
+                      <Route index element={<div className="p-4 bg-orange-700">
+                        <p className="text-red-100">
+                          Hello World
+                        </p>
+                      </div>} />
                     </Route>
 
                     <Route path="/blog-posts">
