@@ -110,7 +110,6 @@ function App() {
                 }}
               >
                 <Routes>
-                  {/* <Route index element={<p>Helloworld</p>} /> */}
                   <Route index element={<Landing />} />
                   {/* path="comp" */}
 
@@ -121,11 +120,11 @@ function App() {
                       <Authenticated
                         fallback={<CatchAllNavigate to="/login" />}
                       >
-                        <ThemedLayoutV2
+                        {/* <ThemedLayoutV2
                           Header={() => <Header isSticky={true} />}
-                        >
-                          <Outlet />
-                        </ThemedLayoutV2>
+                        > */}
+                        <Outlet />
+                        {/* </ThemedLayoutV2> */}
                       </Authenticated>
                     }
                   >
@@ -133,6 +132,11 @@ function App() {
                       index
                       element={<NavigateToResource resource="blog_posts" />}
                     /> */}
+
+                    <Route path="/app">
+                      <Route index element={<p>app</p>} />
+                    </Route>
+
                     <Route path="/blog-posts">
                       <Route index element={<BlogPostList />} />
                       <Route path="create" element={<BlogPostCreate />} />
