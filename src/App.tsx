@@ -61,7 +61,7 @@ function App() {
 
   return (
     <BrowserRouter>
-      <GitHubBanner />
+      {/* <GitHubBanner /> */}
       <RefineKbarProvider>
         <ColorSchemeProvider
           colorScheme={colorScheme}
@@ -109,6 +109,8 @@ function App() {
                 }}
               >
                 <Routes>
+                  <Route index element={<p>Helloworld</p>} />
+
                   <Route
                     element={
                       <Authenticated
@@ -122,10 +124,10 @@ function App() {
                       </Authenticated>
                     }
                   >
-                    <Route
+                    {/* <Route
                       index
                       element={<NavigateToResource resource="blog_posts" />}
-                    />
+                    /> */}
                     <Route path="/blog-posts">
                       <Route index element={<BlogPostList />} />
                       <Route path="create" element={<BlogPostCreate />} />
@@ -154,6 +156,7 @@ function App() {
                       element={<ForgotPassword />}
                     />
                   </Route>
+                  <Route path="/test" element={<p>Helloworld</p>} />
                 </Routes>
 
                 <RefineKbar />
