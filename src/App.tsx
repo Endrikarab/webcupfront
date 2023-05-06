@@ -41,6 +41,7 @@ import {
 import { ForgotPassword } from "./pages/forgotPassword";
 import { Login } from "./pages/login";
 import { Register } from "./pages/register";
+import { Landing } from "./pages/landing";
 
 function App() {
   const [colorScheme, setColorScheme] = useLocalStorage<ColorScheme>({
@@ -109,7 +110,11 @@ function App() {
                 }}
               >
                 <Routes>
-                  <Route index element={<p>Helloworld</p>} />
+                  {/* <Route index element={<p>Helloworld</p>} /> */}
+                  <Route index element={<Landing />} />
+                  {/* path="comp" */}
+
+                  {/* <Route index element={<p>Intern</p>} /> */}
 
                   <Route
                     element={
