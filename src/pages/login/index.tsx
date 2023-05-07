@@ -90,9 +90,13 @@ export const Login = () => {
               Je veux m'inscrire!
             </Anchor>
           </Group>
-          <Button fullWidth mt="xl">
+
+          <button
+            type="button"
+            className="inline-flex mt-3 w-fit w-[275px!important] justify-center rounded-md bg-teal-400  py-2 text-sm font-semibold text-white shadow-sm hover:bg-red-500 "
+          >
             Se connecter
-          </Button>
+          </button>
         </Paper>
       </CustomCard>
     </div>
