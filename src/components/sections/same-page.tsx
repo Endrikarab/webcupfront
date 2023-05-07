@@ -152,7 +152,7 @@ export const SamePage = () => {
 
   return (
     <section ref={targetRef}>
-      <div className="relative h-[800vh]">
+      <div className="relative h-[800vh] z-20">
         <div className="sticky top-1/2 flex origin-center -translate-y-1/2 justify-center">
           <motion.div
             className="translate-x-centered-offset absolute left-1/2 top-1/2 flex w-[50vw] -translate-y-1/2 scale-[var(--scale)] flex-col items-center justify-center "
@@ -172,10 +172,11 @@ export const SamePage = () => {
               className="mt-3 block text-2xl text-white"
               style={{ opacity: newBranchOpacity }}
             >
-              {/* <BranchIcon className="mr-3 inline-block h-12 w-12" />  */}
+              {/* <BranchIcon className="mr-3 inline-block h-12 w-12" /> */}
               ²Feature branch
             </motion.span>
           </motion.div>
+
           <motion.div
             className="translate-x-centered-offset absolute left-1/2 top-1/2 flex w-[50vw] -translate-y-1/2 scale-[var(--scale)] flex-col items-center justify-center"
             style={stylesWithCssVar({
@@ -212,6 +213,7 @@ export const SamePage = () => {
             Spin up a new branch for any sized project in seconds.
           </motion.p>
         </div>
+
         <motion.p
           style={stylesWithCssVar({
             opacity: paragraph1Opacity,

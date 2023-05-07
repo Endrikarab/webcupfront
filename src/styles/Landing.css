@@ -1,6 +1,6 @@
 #textblock {
   background-color: #283749;
-  height: 100vh;
+  height: 400px;
   margin-top: -40vh;
 }
 
@@ -44,7 +44,7 @@
 
 .animation,
 .animation_layer {
-  height: 1000px;
+  min-height: 100vh;
 }
 
 .animation {
@@ -55,8 +55,8 @@
 
 .animation_layer {
   background-position: bottom center;
-  background-size: auto 1038px;
-  background-repeat: repeat-x;
+  background-size: cover;
+  background-repeat: no-repeat;
   width: 100%;
   position: absolute;
 }
