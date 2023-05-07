@@ -23,7 +23,7 @@ import routerBindings, {
 } from "@refinedev/react-router-v6";
 import dataProvider from "@refinedev/simple-rest";
 import { useTranslation } from "react-i18next";
-import { BrowserRouter, Outlet, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Navigate, Outlet, Route, Routes } from "react-router-dom";
 import { authProvider } from "./authProvider";
 import { Header } from "./components/header";
 import {
@@ -161,7 +161,8 @@ function App() {
                   <Route
                     element={
                       <Authenticated fallback={<Outlet />}>
-                        <NavigateToResource />
+                        {/* <NavigateToResource /> */}
+                        <Navigate to="/app" />
                       </Authenticated>
                     }
                   >

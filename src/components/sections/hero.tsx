@@ -1,4 +1,4 @@
-import { GithubIcon } from "@/icons/github";
+// import { GithubIcon } from "@/icons/github";
 import { useScroll, useTransform, motion } from "framer-motion";
 import { useEffect, useRef } from "react";
 
@@ -69,10 +69,10 @@ export const Hero = () => {
           reimagined.
         </h1>
 
-        <a href="#" className="flex items-center text-lg text-primary">
+        {/* <a href="#" className="flex items-center text-lg text-primary">
           <GithubIcon className="mr-2 inline h-5 w-5" />
           Import GitHub project
-        </a>
+        </a> */}
       </motion.div>
     </motion.section>
   );
