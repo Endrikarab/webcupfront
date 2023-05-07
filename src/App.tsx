@@ -44,6 +44,7 @@ import { Register } from "./pages/register";
 import { Landing } from "./pages/landing";
 // import "./styles/App.css";
 import "tailwindcss/tailwind.css";
+import { Accueil } from "./pages/accueil";
 
 function App() {
   const [colorScheme, setColorScheme] = useLocalStorage<ColorScheme>({
@@ -113,6 +114,7 @@ function App() {
               >
                 <Routes>
                   <Route index element={<Landing />} />
+                  <Route path="accueil" index element={<Accueil />} />
                   {/* path="comp" */}
 
                   {/* <Route index element={<p>Intern</p>} /> */}
@@ -136,11 +138,14 @@ function App() {
                     /> */}
 
                     <Route path="/app">
-                      <Route index element={<div className="p-4 bg-orange-700">
-                        <p className="text-red-100">
-                          Hello World
-                        </p>
-                      </div>} />
+                      <Route
+                        index
+                        element={
+                          <div className="p-4 bg-orange-700">
+                            <p className="text-red-100">Hello World</p>
+                          </div>
+                        }
+                      />
                     </Route>
 
                     <Route path="/blog-posts">

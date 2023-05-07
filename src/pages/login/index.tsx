@@ -53,7 +53,7 @@ export const Login = () => {
           maw={150}
           mx="auto"
           radius="md"
-          src="src/images/Logo.svg"
+          src="src/images/Logohorizontal.svg"
           alt="Random image"
           width={80}
           height={90}

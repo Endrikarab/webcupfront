@@ -3,3 +3,10 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+#Accueil {
+  background-image: url("../images/fondAccueil.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+}
