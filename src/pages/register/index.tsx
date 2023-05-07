@@ -1,6 +1,19 @@
-import { Anchor, Group, Paper, PasswordInput, TextInput } from "@mantine/core";
+import {
+  Anchor,
+  Box,
+  Grid,
+  Group,
+  InputBase,
+  Paper,
+  PasswordInput,
+  Select,
+  TextInput,
+} from "@mantine/core";
 import { AuthPage } from "@refinedev/mantine";
 import { CustomCard } from "@tsamantanis/react-glassmorphism";
+import { IMaskInput } from "react-imask";
+import { DateInput } from "@mantine/dates";
+import { Image } from "@mantine/core";
 
 export const Register = () => {
   // return <AuthPage type="register" />;
@@ -13,72 +26,142 @@ export const Register = () => {
         className="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]"
         aria-hidden="true"
       ></div>
-      {/* <div className="mx-auto max-w-2xl text-center">
-    <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-      Contact sales
-    </h2>
-    <p className="mt-2 text-lg leading-8 text-gray-600">
-      Aute magna irure deserunt veniam aliqua magna enim voluptate.
-    </p>
-  </div> */}
+
       <CustomCard
         effectColor="grey" // required
         color="white" // default color is white
         blur={10} // default blur value is 10px
         borderRadius={0} // default border radius value is 10px
-        className="w-[400px] min-h-[500px]  bold bg-white  mt-36 mr-[120px] text-center border-radius-1 m-0-auto"
-        style={{ border: "1px solid white" }}
+        className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-12 gap-2 w-[797px] min-w-[797px]  min-h-[600px]  bold bg-white  mt-36 mr-[120px] text-center border-radius-1 m-0-auto"
+        style={{
+          border: "1px solid white",
+          justifyContent: "center",
+          textAlign: "center",
+          margin: "0 auto",
+        }}
       >
-        <h1>Inscription</h1>
-        <Paper
-          className="bg-transparent border-none text-left"
-          withBorder
-          shadow="md"
-          p={30}
-          mt={30}
-          radius="md"
+        <div
+          className=" col-span-4 text-center flex items-center justify-center"
+          style={{
+            alignItems: "center",
+            marginTop: "0 auto",
+          }}
         >
-          <TextInput
-            label="Email"
-            placeholder="johnDoe@gmail.com"
-            className="text-white bold border-radius-1"
-            required
-            styles={{
-              label: {
-                color: "white",
-              },
-            }}
-          />
-          <PasswordInput
-            className="text-white bold border-radius-1"
-            label="Password"
-            placeholder=""
-            required
-            mt="md"
-            styles={{
-              label: {
-                color: "white",
-              },
-            }}
-          />
-          <Group position="apart" mt="lg">
-            {/* <Checkbox label="Remember me" /> */}
-
-            <Anchor component="button" size="sm" color="white">
-              Je veux m'inscrire!
-            </Anchor>
-            <Anchor component="button" size="sm" color="green">
-              Je veux m'inscrire!
-            </Anchor>
-          </Group>
-
-          <button
-            type="button"
-            className="inline-flex mt-3 w-fit w-[275px!important] justify-center rounded-md bg-teal-400  py-2 text-sm font-semibold text-white shadow-sm hover:bg-red-500 "
+          <div className="m-0-auto">
+            <Image
+              maw={150}
+              mx="auto"
+              radius="md"
+              src="src/images/Logo.svg"
+              alt="Random image"
+              width={80}
+              height={90}
+            />
+            <h1 style={{ margin: "0 auto" }}>Inscription</h1>
+          </div>
+          <div className="m-0-auto"></div>
+        </div>
+        <div className="col-span-8 text-center ">
+          <Paper
+            className="grid grid-cols-12 md:grid-cols-12 lg:grid-cols-12 gap-4 bg-transparent border-none text-left"
+            withBorder
+            shadow="md"
+            p={30}
+            mt={30}
+            radius="md"
           >
-            Se connecter
-          </button>
-        </Paper>
+            <TextInput
+              label="Nom"
+              placeholder=""
+              className="col-span-6 text-white bold border-radius-1 mb-3"
+              required
+              styles={{
+                label: {
+                  color: "white",
+                },
+              }}
+            />
+            <TextInput
+              label="Prénom"
+              placeholder=""
+              className="col-span-6 text-white bold border-radius-1 mb-3"
+              required
+              styles={{
+                label: {
+                  color: "white",
+                },
+              }}
+            />
+
+            <InputBase
+              label="Genre"
+              required
+              component="select"
+              className="col-span-6 text-white bold border-radius-1 mb-3"
+              styles={{
+                label: {
+                  color: "white",
+                },
+              }}
+            >
+              <option value="react">Homme</option>
+              <option value="react">Femme</option>
+            </InputBase>
+
+            <TextInput
+              label="Date de naissance"
+              placeholder=""
+              className="col-span-6 text-white bold border-radius-1 mb-3"
+              required
+              styles={{
+                label: {
+                  color: "white",
+                },
+              }}
+            />
+            <TextInput
+              label="Email"
+              placeholder="johnDoe@gmail.com"
+              className="col-span-12 text-white bold border-radius-1 mb-2"
+              required
+              styles={{
+                label: {
+                  color: "white",
+                },
+              }}
+            />
+            <PasswordInput
+              className="col-span-12 text-white bold border-radius-1 mb-4"
+              label="Mot de passe"
+              placeholder=""
+              required
+              mt="md"
+              styles={{
+                label: {
+                  color: "white",
+                },
+              }}
+            />
+            {/* <Group position="apart" mt="lg">
+             
+
+              <Anchor component="button" size="sm" color="white">
+                Je veux m'inscrire!
+              </Anchor>
+              <Anchor component="button" size="sm" color="green">
+                Je veux m'inscrire!
+              </Anchor>
+            </Group> */}
+
+            <button
+              type="button"
+              style={{ flex: 1 }}
+              className="w-full col-span-12 inline-flex  mt-3 flex w-fit  justify-center rounded-md bg-teal-400  py-2 text-sm font-semibold text-white shadow-sm hover:bg-red-500 "
+            >
+              Envoyer mon inscription
+            </button>
+          </Paper>
+        </div>
       </CustomCard>
     </div>
   );
