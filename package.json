@@ -19,6 +19,7 @@
     "@refinedev/react-table": "^5.1.4",
     "@refinedev/simple-rest": "^4.0.0",
     "@tabler/icons": "^1.1.0",
+    "@tsamantanis/react-glassmorphism": "^1.1.2",
     "autoprefixer": "^10.4.14",
     "framer-motion": "^10.12.8",
     "i18next": "^20.1.0",
