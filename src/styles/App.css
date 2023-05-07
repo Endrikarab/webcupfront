@@ -1,5 +1,28 @@
 #loginContainer {
-  background-image: url("../images/Register.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
+	background-image: url("../images/Register.svg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.proposition-card {
+	background: linear-gradient(
+		142.99deg,
+		rgba(91, 87, 87, 0.5) 10.13%,
+		rgba(255, 255, 255, 0.1) 88.16%
+	);
+	padding: 8px;
+	backdrop-filter: blur(17.5px);
+	border-radius: 4px;
+}
+
+.proposition-card-img {
+	background: linear-gradient(
+		142.99deg,
+		rgba(91, 87, 87, 0.5) 10.13%,
+		rgba(255, 255, 255, 0.1) 88.16%
+	);
+	backdrop-filter: blur(17.5px);
+
+	/* Note: backdrop-filter has minimal browser support */
+	border-radius: 4px;
 }
