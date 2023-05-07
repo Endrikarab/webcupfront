@@ -1,12 +1,10 @@
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
-import { AuthPage } from "@refinedev/mantine";
-import TextBlock from "../textBlock";
-import "../../styles/Landing.css";
-import { SamePage } from "../../components/sections/same-page";
-import { StreamlinedExperience } from "../../components/sections/streamlined-experience";
 import { Features } from "../../components/sections/features";
 import { MoreFeatures } from "../../components/sections/more-features";
-import { NoLockin } from "../../components/sections/no-lockin";
+import { SamePage } from "../../components/sections/same-page";
+import { StreamlinedExperience } from "../../components/sections/streamlined-experience";
+import "../../styles/Landing.css";
+import TextBlock from "../textBlock";
 
 export const Landing = () => {
   {
