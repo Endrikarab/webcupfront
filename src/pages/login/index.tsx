@@ -2,6 +2,7 @@ import { AuthPage } from "@refinedev/mantine";
 import { url } from "vfile-message";
 import "../../styles/App.css";
 import { CustomCard } from "@tsamantanis/react-glassmorphism";
+import { Image } from "@mantine/core";
 import {
   TextInput,
   PasswordInput,
@@ -48,13 +49,22 @@ export const Login = () => {
         className="w-[400px] min-h-[500px]  bold bg-white float-right mt-36 mr-[120px] text-center border-radius-1 "
         style={{ border: "1px solid white" }}
       >
+        <Image
+          maw={150}
+          mx="auto"
+          radius="md"
+          src="src/images/Logo.svg"
+          alt="Random image"
+          width={80}
+          height={90}
+        />
         <h1>Connexion</h1>
         <Paper
           className="bg-transparent border-none text-left"
           withBorder
           shadow="md"
           p={30}
-          mt={30}
+          mt={10}
           radius="md"
         >
           <TextInput
@@ -83,11 +93,21 @@ export const Login = () => {
           <Group position="apart" mt="lg">
             {/* <Checkbox label="Remember me" /> */}
 
-            <Anchor component="button" size="sm" color="white">
-              Je veux m'inscrire!
+            <Anchor
+              component="button"
+              size="sm"
+              color="white"
+              style={{ textDecoration: "none", color: "white" }}
+            >
+              Mot de passe oublié ?
             </Anchor>
-            <Anchor component="button" size="sm" color="green">
-              Je veux m'inscrire!
+            <Anchor
+              component="button"
+              size="sm"
+              color="green"
+              style={{ textDecoration: "none", color: "#0bceb2" }}
+            >
+              Je veux m'inscrire !
             </Anchor>
           </Group>
 
