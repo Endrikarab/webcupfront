@@ -30,7 +30,7 @@ const AboutSection = () => {
 					pratiques pour vous aider à mieux comprendre vous-même.
 				</span>
 			</p>
-			<h3>Institut International des Rêves</h3>
+			<h3 className="font-semibold text-[40px] mt-[25px]">Institut International des Rêves</h3>
 			<p className="flex flex-col gap-[25px] text-[24px] font-light">
 				<span>
 					Bienvenue à l'Institut International des Rêves, un centre de
