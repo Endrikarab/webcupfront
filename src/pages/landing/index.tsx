@@ -82,14 +82,11 @@ const useStyles = createStyles((theme) => ({
 	},
 }));
 export const Landing = () => {
-	{
-		/* <div>Landing</div> */
-	}
 	return (
 		<>
 			<div className='relative w-ful bg-darky'>
 				<Parallax
-					pages={4}
+					pages={5}
 					style={{ top: "0", left: "0" }}
 					className='animation bg-darky'>
 					<ParallaxLayer
@@ -106,9 +103,6 @@ export const Landing = () => {
 							className='animation_layer parallax'
 							id='nuage'></div>
 					</ParallaxLayer>
-					{/* <ParallaxLayer offset={0} speed={0.15}>
-            <Hero />
-          </ParallaxLayer> */}
 					<ParallaxLayer
 						offset={0}
 						speed={0.2}>
@@ -170,14 +164,6 @@ export const Landing = () => {
 							</div>
 						</div>
 					</ParallaxLayer>
-					{/*  */}
-					{/* <TextBlock /> */}
-
-					{/* <ParallaxLayer offset={1} speed={0.50}>
-            <div className="relative w-full overflow-x-clip bg-red-600 ">
-              <StreamlinedExperience />
-            </div>
-          </ParallaxLayer> */}
 					<ParallaxLayer
 						offset={1}
 						speed={0.5}>
@@ -196,17 +182,6 @@ export const Landing = () => {
 						<AboutSection />
 					</ParallaxLayer>
 				</Parallax>
-
-				{/* <div className="relative w-full overflow-x-clip bg-gray-600 ">
-          <div className="h-[100vh] bg-red-600"></div>
-          <div className="h-[100vh] bg-green-600"></div>
-          <div className="h-[100vh] bg-red-600"></div>
-          <SamePage />
-          <StreamlinedExperience />
-          <Features />
-          <MoreFeatures />
-          <NoLockin />
-        </div> */}
 			</div>
 		</>
 	);
